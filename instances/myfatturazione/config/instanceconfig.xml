@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <GenRoBag>
-	<db dbname="myfatturazione"/>
+	<db dbname="domi"/>
 	<packages>
 		<gnrcore_sys pkgcode="gnrcore:sys"/>
 		<gnrcore_adm pkgcode="gnrcore:adm"/>
@@ -11,10 +11,7 @@
         <wsgi mainpackage="fatt"/>
     </site>
 	<authentication pkg="gnrcore:sys">
-              <py_auth defaultTags="user" method="authenticate" pkg="adm"/>
-              <xml_auth defaultTags="user,xml">
-              <admin pwd="caficafi" tags="_DEV_,admin,user"/>
-              </xml_auth>
+		<py_auth defaultTags="user" method="authenticate" pkg="adm"/>
 	</authentication>
 </GenRoBag>
 
